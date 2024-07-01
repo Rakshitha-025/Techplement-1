@@ -1,38 +1,146 @@
+body {
+  background-image: url('C:\Users\S Rakshitha\quotes-of-the-day\src\Pink And Purple Minimalist Motivational Quote Desktop Wallpaper.jpg'); /* Adjust URL for a specific image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main App Container */
 .App {
   text-align: center;
+  margin-top: 6rem;
+  background: rgba(255, 255, 255, 0.4); 
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(5px); 
+  animation: fadeIn 1.5s ease-in-out;
+  margin-top: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Quote Box */
+.quote-box {
+  background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.5s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quote {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.author {
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  color: #0a0a0a;
+}
+
+/* Buttons */
+.button,
+.search-button,
+.clear-button {
+  background: linear-gradient(135deg, #4CAF50, #388E3C);
   color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover,
+.search-button:hover,
+.clear-button:hover {
+  background: linear-gradient(135deg, #45A049, #2E7D32);
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Search Bar Container */
+.search-bar-container {
+  margin-bottom: 20px;
 }
+
+.search-bar {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  width: calc(100% - 22px);
+  font-size: 1em;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  border-color: #1140d9;
+}
+
+.search-button {
+  background: linear-gradient(135deg, #1140d9, #0d34b7);
+}
+
+.clear-button {
+  background: linear-gradient(135deg, #d9534f, #c9302c);
+}
+
+/* Author List Styles */
+.author-list {
+  margin-top: 10px;
+  margin: 20px auto;
+  text-align: middle;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out; 
+}
+
+.author-list h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.author-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+.author-list li {
+  margin: 5px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  transition: color 0.3s ease-in-out;
+}
+.author-list li:hover {
+  color: #1140d9; 
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+

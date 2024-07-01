@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.heading {
+  font-size: 2em; 
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+  margin: 2rem; 
+  color: #333; 
+}
+
